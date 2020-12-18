@@ -35,8 +35,7 @@ function draw() {
   text("score:"+score,500,500);
 if(gameState===PLAY){
   if(keyDown(UP_ARROW)){
-    mask.x=650;
-    mask.y=200;
+ mask.y=mask.y-10
   }  
   if(mask.isTouching(virusGroup)){
     virusGroup.destroyEach();
